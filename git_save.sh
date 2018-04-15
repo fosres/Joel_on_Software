@@ -16,4 +16,4 @@
 
 	git commit -m Joel_on_Software
 
-	git push origin Joel_on_Software
+	git push origin master
