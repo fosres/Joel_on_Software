@@ -6,7 +6,7 @@ from the creator of
 
 StackOverflow, 
 
-FogBugz
+FogBugz,
 
 Fog Creek Software
 
