@@ -1,0 +1,461 @@
+The Joel Test
+
+1. Do you use source control?
+
+2. Can you make a build in one
+
+step?
+
+The smaller the incision,
+
+the better. The more steps
+
+it takes to build a solution,
+
+the more likely you will gnerate
+
+build errors. Usually the build
+
+is a single script.
+
+3. Do you make daily builds?
+
+Build the solution once per
+
+day at a specified time.
+
+So in case the last build went
+
+to hell, the second-to-last
+
+would be extremely recent.
+
+Therefore, no breakage would
+
+go unnoticed.
+
+To make sure builds do not break:
+
+whoever last broke build had to
+
+"babysit" builds until someone
+
+else broke it. This forced
+
+everyone to learn how successful
+
+builds worked.
+
+---------------------------------
+
+4. Do you have a bug database?
+
+JOEL DOESN'T CARE WHAT YOU HAVE
+
+TO SAY. YOU BETTER HAVE AN 
+
+ORGANIZED DATABASE LISTING ALL
+
+KNOWN BUGS IN THE CODE, OR ELSE:
+
+Ship Low-quality, shoddy software.
+
+Don't bother saying you can hold
+
+a bug list in your head. We are
+
+software developers, not medical
+
+students hardwired to memorize 
+
+a bunch of facts. And in the 
+
+morning rush, all the bugs are
+
+forgotten in the mind.
+
+YOU ABSOLUTELY MUST KEEP TRACK
+
+OF BUGS FORMALLY.
+
+Bug Databases can be complicated
+
+or simple. A minimal bug database
+
+must include the following data 
+
+for every bug:
+
+1. Complete steps to reproduce
+
+the bug.
+
+2. Expected behavior
+
+3. Observed (Buggy behavior)
+
+4. Who it is assigned to
+
+5. Whether it has been 
+
+fixed or not.
+
+-------------------------------------
+
+5. Do you fix bugs before writing
+
+new code?
+
+When Microsoft Word for Windows was
+
+being designed for the first time,
+
+the project managers forced coders
+
+to RUSH with their code. There was
+
+so much pressure for the team to 
+
+hurry up that one programmer 
+
+deliberately entered wrong code
+
+so he would actually be able to
+
+have enough time to fix it for real
+
+in the distant future.
+
+The story of that programmer is
+
+this: the coder was responsible for
+
+calculating the height of a line of
+
+text, so he wrote "return 12;"
+
+instead of an argument that accounts
+
+for variables. He knew what would
+
+end up happening: a bug report
+
+screaming how erroneous the result
+
+was. Now the stupid project managers
+
+finally gave him or her enough time
+
+to fix the code FOR REAL.
+
+Microsoft eventually realized how
+
+stupid its bug-tracking strategy 
+
+was. From that point on, Micrsoft
+
+halted writing new code until ALL
+
+--YES ALL. AND I MEAN ALL BUGS
+
+ARE FIXED. Its called the "zero
+
+defects methodology".
+
+So moral of the story: the longer
+
+you wait before fixing a bug, the
+
+costlier (in time and money) it is
+
+to fix. The damage exponentially
+
+grows larger.
+
+6. Do you have an up-to-date schedule?
+
+Most programmers like to scream:
+
+"It will be done when it's done!"
+
+they scream at the businessespeople.
+
+Well, that will not work. Business
+
+people have to run demos, trade
+
+shows, advertising, and more. And the
+
+only way to do that is to have a 
+
+schedule and keep it up to date.
+
+A schedule forces you to decide
+
+what features you are going to do,
+
+and then it forces you to pick up
+
+the least important features and
+
+cut them rather than slippibng into
+
+featuritis: I have committed this
+
+sin before. Remember when you tried
+
+to make my_max.cpp account for 
+
+infinite precision? Your professor
+
+then told you to not worry about
+
+precision. Oh, and he said the
+
+formula for equivalence of doubles
+
+will not help you.
+
+Featuritis will make your software
+
+bloated and over-complicated, instead
+
+of the design that does EXACTLY what
+
+the user wanted.
+
+7. Do you have a spec?
+
+WRITE YOUR CODING SPECIFICATIONS
+
+FIRST BEFORE BEGINNING TO CODE
+
+IN DOCUMENTED WRITING, NOT IN
+
+YOUR HEAD!
+
+For an idea of excellent spec,
+
+see "Great Spec Example.pdf"
+
+for an example of one. Especially
+
+for collatz.cpp
+
+NEW RULE UPLOAD SPEC FOR EACH 
+
+AND EVERY CODE YOU MAKE!
+
+Understand that just because you
+
+have been assigned a problem with
+
+clear instructions on what to
+
+simply do IS INSUFFICIENT AS A SPEC.
+
+As "Great Spec Example" demonstrates,
+
+you also need to make it clear
+
+what the Input Range and Formatting
+
+Output must be in WYSIWYG format.
+
+TASK: UPDATE GITHUB REPOSITORIES
+
+SO EACH CODE YOU MAKE HAS A SPEC.
+
+Yes, even fibonacci.cpp
+
+Netscape itself practiced bad
+
+coding management like this.
+
+No spec! The code became so horrible
+
+they did THE DEADLIEST BUSINESS SIN:
+
+THROW ALL THE CODE AWAY AND START
+
+OVER FROM SCRATCH.
+
+And then they made the same mistakes
+
+again with Mozilla ( which was 
+
+started by ex-Netscape members).
+
+So how do you make sure your 
+
+developers have done a good job
+
+of writing Code Specs.
+
+First, make sure you only hire
+
+developers that follow all the 
+
+qualifications in this article
+
+to begin with. Their GitHub accounts
+
+better have well-documented code
+
+and specs in the directory storing
+
+their code. When it comes to 
+
+actually writing the code on paper,
+
+you better see them plan their 
+
+code ON PAPER IN WRITING.
+
+OR hire Program Manager that writes
+
+spec?--NAH, get coders who have a 
+
+habit of writing clearly.
+
+8. Do programmers have QUIET WORKING
+
+CONDITIONS?
+
+The great software management book
+
+Peopleware documents the benefits
+
+of quiet working conditions.
+
+Worst way to get knocked out of
+
+focus: coworkers.
+
+Keep your coders separate from the
+
+screams and hassles.
+
+A minute of interrupting a coder
+
+is actually interrupting 15 minutes
+
+of productivity.
+
+Example: Mutt can't remember Unicode
+
+version of strcpy function. He could
+
+look it up, which takes 30 seconds,
+
+but Jeff loses 15 minutes of activity
+
+because his focus streak has been
+
+broken (just to save Mutt 15 
+
+seconds).
+
+KEEP YOUR COWORKERS IN SEPARATE
+
+OFFICES WITH WALLS AND DOORS.
+
+9. Do you use THE BEST TOOLS MONEY
+
+CAN BUY?
+
+Compilation time breeds distractions.
+
+15 seconds of compilation translates
+
+to 3 hours of Youtube for developers.
+
+Get the power computer with 8GB of
+
+RAM instead of okayish 4GB.
+
+NOTE TO SELF: If you are writing
+
+GUI code: Two monitors at once
+
+will make debugging A LOT LOT EASIER.
+
+TOP NOTCH DEVELOPMENT TEAMS DON'T
+
+TORTURE THEIR PROGRAMMERS WITH 
+
+CRAPPY DEVELOPMENT TOOLS. Even minor
+
+frustrations caused by using
+
+underpowered tools add up, making
+
+programmers grumpy and unhappy. And
+
+a grumpy programmer is an
+
+unproductive programmer. Basically,
+
+like laypeople, programmers LOVE THE
+
+AWESOME GADGETS. You may groan about
+
+buying that expensive Macbook Pro
+
+instead of that cheaper Asus Laptop,
+
+but this ends up being a cheaper way
+
+to get people to work for you than
+
+to pay them a higher salary!
+
+10. DO you have testers?
+
+Have a tester for every two or three
+
+programmers, or you will ship buggy
+
+products, or you are wasting money by
+
+having $100/hour programmers do work
+
+that can be done by $30/hour testers.
+
+11. Do new candidates write code
+
+during their interview?
+
+11. Do new candidates write code
+
+during their interview?
+
+12. Do you do hallway usability
+
+testing?
+
+A hallway usability test is where
+
+you grab the next person that 
+
+passes by in the hallway and force
+
+them to try to use the code you
+
+just wrote. If you do this to five
+
+peopele, you will learn 95% of 
+
+what there is to learn about 
+
+usability problems in your code.
+
+what there is to learn about
+
+usability problems in your code.
+
+No more than two of these should be
+
+an answer of "No".
+
+1. Do you use source control
